@@ -11,7 +11,7 @@ namespace Snowdrama.UI
         Dictionary<string, UIRoute> routes = new Dictionary<string, UIRoute>();
         public Stack<string> routesOpened = new Stack<string>();
 
-        [Header("Debug")]
+        [Header("Debug[Don't Edit!]")]
         public List<string> registeredRoutes;
         public List<string> currentStack;
 
