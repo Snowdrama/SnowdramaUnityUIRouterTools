@@ -1,0 +1,15 @@
+{
+  "name": "com.snowdrama.ui_router",
+  "version": "0.1.0",
+  "description": "My Simple UI router tools for making basic menus",
+  "displayName": "Snowdrama UI Router Tools",
+  "unity": "2019.1",
+  "author": {
+    "name": "John 'Snowdrama' Close",
+    "email": "SnowdramaGames@gmail.com",
+    "url": "http://www.snowdrama.net"
+  },
+  "dependencies": {},
+  "type": "utility",
+  "samples": []
+}
