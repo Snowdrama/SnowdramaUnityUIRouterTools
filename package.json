@@ -13,8 +13,8 @@
   "type": "utility",
   "samples": [
     {
-      "displayName": "Spring Example",
-      "description": "Contains an example for several springs and comparisons betwen mass friction and tension",
+      "displayName": "Menu Example",
+      "description": "Contains an example for how to make a basic menu",
       "path": "Samples~/UIRouterMenuExample"
     }
   ]
