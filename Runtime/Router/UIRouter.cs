@@ -33,7 +33,23 @@ namespace Snowdrama.UI
             registeredRoutes.Clear();
             currentStack.Clear();
         }
+        public bool IsRouteOpen(string routeSegment)
+        {
+            if (routesOpened.Peek() == routeSegment.ToLower())
+            {
+                return true;
+            }
+            return false;
+        }
 
+        public bool IsRouteInRouteStack(string routeSegment)
+        {
+            if (routesOpened.Contains(routeSegment.ToLower()))
+            {
+                return true;
+            }
+            return false;
+        }
 
         public void RegisterRoute(string routeSegment, UIRoute reference)
         {
