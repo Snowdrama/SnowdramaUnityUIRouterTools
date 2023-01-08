@@ -12,8 +12,8 @@ namespace Snowdrama.UI
         public Stack<string> routesOpened = new Stack<string>();
 
         [Header("Debug[Don't Edit!]")]
-        public List<string> registeredRoutes;
-        public List<string> currentStack;
+        public List<string> registeredRoutes = new List<string>();
+        public List<string> currentStack = new List<string>();
 
         public Action OnAllRoutesClosed;
         public Action<string> OnOpenRoute;
@@ -35,15 +35,26 @@ namespace Snowdrama.UI
         }
         public bool IsRouteOpen(string routeSegment)
         {
+            if(routesOpened.Count == 0)
+            {
+                return false;
+            }
+
             if (routesOpened.Peek() == routeSegment.ToLower())
             {
                 return true;
             }
+
             return false;
         }
 
         public bool IsRouteInRouteStack(string routeSegment)
         {
+            if (routesOpened.Count == 0)
+            {
+                return false;
+            }
+
             if (routesOpened.Contains(routeSegment.ToLower()))
             {
                 return true;
